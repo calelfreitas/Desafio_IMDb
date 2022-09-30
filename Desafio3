@@ -1,0 +1,11 @@
+import csv
+colunas:['imdb.id','title', 'year', 'genres','kind']
+linhas=[['20880628', 'Duro de matar', '2012','Ação']
+['10872600', 'Avatar', '2014', 'Ficção']
+[ '3501632', 'A pequena sereia', '2023', 'Ficção']
+['9419884', 'Vingadores',  '2016', 'Ação']
+ ['7131622', 'Clube da luta', '2001', 'Ação']]
+with open ( 'GFG.csv', 'w') as f:
+	write=csv.writer(f)
+	write.writerow(colunas)
+	write.writerows(linhas)
